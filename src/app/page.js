@@ -1,3 +1,5 @@
+import Footer5 from '@/components/footer';
+import Footer from '@/components/footer';
 import Header from '@/components/Header';
 import Image from 'next/image';
 import img from 'next/image';
@@ -23,8 +25,7 @@ export default function Home() {
                       <h1 className="!text-6xl">
                         Social-<span className="text-socialred">first</span>,
                         <br /> creatively{' '}
-                        <span className="text-socialred">sharp</span>, and{' '}
-                        <br />
+                        <span className="text-socialred">sharp</span>, & <br />
                         performance-
                         <span className="text-socialred">obsessed</span>
                       </h1>
@@ -41,8 +42,12 @@ export default function Home() {
                         Browse Our Services
                       </a>
                     </div>
-                    <div className="w-80">
-                      <img src="assets/images/phone.png" />
+                    <div className="w-80 flex">
+                      <img
+                        src="assets/images/phone.png"
+                        alt="phone"
+                        className="pl-10"
+                      />
                     </div>
                   </div>
                 </div>
@@ -328,6 +333,8 @@ export default function Home() {
             </div>
           </section>
 
+          {/* end section 2 end */}
+
           <section className="section-size-2 lighter-bg">
             <div className="container">
               <div className="grid center text-center">
@@ -340,6 +347,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          {/* About section */}
           <section className="section-size-2 ">
             <div className="container">
               <div className="mb-4">
@@ -418,337 +427,393 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div className="flex-1 h-64 object-cover overflow-hidden">
-                  <Image
-                    src={'/assets/images/about/8.jpg'}
-                    alt="about image"
-                    width={1000}
-                    height={400}
-                  />
+                <div className="flex-1  ">
+                  <div className="h-64 overflow-hidden  object-cover">
+                    <Image
+                      src={'/assets/images/about/8.jpg'}
+                      alt="about image"
+                      width={700}
+                      height={250}
+                    />
+                  </div>
+
+                  <h6 className="text-end font-semibold">
+                    {' '}
+                    In-<span className="text-socialred">Depth</span> View &gt;
+                  </h6>
                 </div>
               </div>
             </div>
           </section>
-          <section className="section-size-2 black-bg light-text" id="team">
+
+          {/* end about section */}
+
+          {/* case study section */}
+          <section className="section-size-1 ">
             <div className="container">
-              <div className="grid">
-                <div className="column-12 text-center animated-text">
-                  <h5 className="grey-text">Your project</h5>
-                  <h2>In the best possible hands</h2>
-                  <div className="space-3"></div>
+              <div className="mb-4">
+                <h3 className="inline-flex bg-[#c8b5b3] p-2 rounded-lg">
+                  Case Study
+                </h3>
+              </div>
+
+              <div className="caseStudy">
+                <Image
+                  src={'/assets/images/caseStudy/10.jpg/'}
+                  alt="pulse"
+                  width={400}
+                  height={300}
+                  className="object-cover image1"
+                />
+                <Image
+                  src={'/assets/images/caseStudy/11.jpg/'}
+                  alt="cred"
+                  width={300}
+                  height={300}
+                  className="object-cover image2"
+                />
+                <Image
+                  src={'/assets/images/caseStudy/12.jpg/'}
+                  alt="ikea"
+                  width={300}
+                  height={300}
+                  className="object-cover image3"
+                />
+                <Image
+                  src={'/assets/images/caseStudy/13.jpg/'}
+                  alt="asian paint"
+                  width={300}
+                  height={300}
+                  className="object-cover image4"
+                />
+              </div>
+            </div>
+          </section>
+          {/* end case study section */}
+
+          {/* category filter 2 */}
+          <section className="section-size-1">
+            <div className="container">
+              <div className="grid vcenter">
+                <div className="column-6">
+                  <h5>Selected work</h5>
+                </div>
+                <div className="column-6">
+                  <ul className="grid-filters text-right" data-target="grid">
+                    <li>
+                      <a
+                        className="button link filter"
+                        href="#"
+                        data-filter="*"
+                      >
+                        All
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="button link filter"
+                        href="#"
+                        data-filter=".social1"
+                      >
+                        Social
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="button link filter"
+                        href="#"
+                        data-filter=".website1"
+                      >
+                        Website
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="button link filter"
+                        href="#"
+                        data-filter=".marketPlace1"
+                      >
+                        MarketPlace
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="button link filter"
+                        href="#"
+                        data-filter=".paid1"
+                      >
+                        Paid
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="button link filter"
+                        href="#"
+                        data-filter=".production1"
+                      >
+                        Production
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="button link filter"
+                        href="#"
+                        data-filter=".customSolutions1"
+                      >
+                        Custom Solutions
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="grid masonry columns-3 columns-tablet-2"
+                id="grid"
+              >
+                <div className="grid-sizer"></div>
+                <div className="grid-item column social1">
+                  <a
+                    className="thumb space-2 animated"
+                    href="pages/project-single-logos.html"
+                  >
+                    <img
+                      alt="Nevo example image"
+                      src="assets/images/casestudy2/social.jpg"
+                    />
+                    <div className="labels">Social</div>
+                    <div className="caption">
+                      <div className="title">Internation Academy</div>
+                      <div className="sub">Identity Design</div>
+                    </div>
+                  </a>
+                </div>
+                <div className="grid-item column website1">
+                  <a
+                    className="thumb space-2 animated"
+                    href="pages/project-single-logos.html"
+                  >
+                    <img
+                      alt="Nevo example image"
+                      src="assets/images/casestudy2/website.webp"
+                    />
+                    <div className="labels">Website</div>
+                    <div className="caption">
+                      <div className="title">Collect</div>
+                      <div className="sub">Logo selection</div>
+                    </div>
+                  </a>
+                </div>
+                <div className="grid-item column marketPlace1">
+                  <a
+                    className="thumb space-2 animated"
+                    href="pages/project-single-logos.html"
+                  >
+                    <img
+                      alt="Nevo example image"
+                      src="assets/images/casestudy2/mm.jpg"
+                    />
+                    <div className="labels">Marketing</div>
+                    <div className="caption">
+                      <div className="title">Untold</div>
+                      <div className="sub">Branding</div>
+                    </div>
+                  </a>
+                </div>
+                {/* <div className="grid-item column paid1">
+                  <a
+                    className="thumb space-2 animated"
+                    href="pages/project-single-hopscotch.html"
+                  >
+                    <img
+                      alt="Nevo example image"
+                      src="assets/images/casestudy2/paid1.jpg"
+                    />
+                    <div className="labels">Paid</div>
+                    <div className="caption">
+                      <div className="title">Sequential</div>
+                      <div className="sub">Magazine</div>
+                    </div>
+                  </a>
+                </div> */}
+                <div className="grid-item column production1">
+                  <a
+                    className="thumb space-2 animated"
+                    href="pages/project-single-logos.html"
+                  >
+                    <img
+                      alt="Nevo example image"
+                      src="assets/images/casestudy2/production.jpg"
+                    />
+                    <div className="labels">Production</div>
+                    <div className="caption">
+                      <div className="title">Tropical Thunder</div>
+                      <div className="sub">Photography</div>
+                    </div>
+                  </a>
+                </div>
+                {/* <div className="grid-item column customSolutions1">
+                  <a
+                    className="thumb space-2 animated"
+                    href="pages/project-single-harrys.html"
+                  >
+                    <img
+                      alt="Nevo example image"
+                      src="assets/images/casestudy2/custom1.jpg"
+                    />
+                    <div className="labels">Custom Solutions</div>
+                    <div className="caption">
+                      <div className="title">Harry&apos;s</div>
+                      <div className="sub">Work selection</div>
+                    </div>
+                  </a>
+                </div> */}
+                <div className="grid-item column paid1">
+                  <a
+                    className="thumb space-2 animated"
+                    href="pages/project-single-logos.html"
+                  >
+                    <img
+                      alt="Nevo example image"
+                      src="assets/images/casestudy2/ads.jpg"
+                    />
+                    <div className="labels">branding</div>
+                    <div className="caption">
+                      <div className="title">Farber Law</div>
+                      <div className="sub">Work selection</div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="container pad-3">
-              <div className="grid masonry columns-3">
-                <div className="grid-item column undefined">
-                  <div className="thumb">
-                    <img
-                      alt="Nevo example image"
-                      src="assets/images/team/1.jpg"
-                    />
-                    <ul className="labels">
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Behance
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="caption">
-                      <h5 className="title">Herald Johnson</h5>
-                      <h6 className="sub">Backend</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="grid-item column undefined">
-                  <div className="thumb">
-                    <img
-                      alt="Nevo example image"
-                      src="assets/images/team/1b.jpg"
-                    />
-                    <ul className="labels">
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Behance
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="caption">
-                      <h5 className="title">Jake Thompson</h5>
-                      <h6 className="sub">UX Design</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="grid-item column undefined">
-                  <div className="thumb">
-                    <img
-                      alt="Nevo example image"
-                      src="assets/images/team/2.jpg"
-                    />
-                    <ul className="labels">
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Behance
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="caption">
-                      <h5 className="title">Tobias Dupré</h5>
-                      <h6 className="sub">Illustration</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="grid-item column undefined">
-                  <div className="thumb">
-                    <img
-                      alt="Nevo example image"
-                      src="assets/images/team/2b.jpg"
-                    />
-                    <ul className="labels">
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Behance
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="caption">
-                      <h5 className="title">Liam Kim</h5>
-                      <h6 className="sub">Frontend</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="grid-item column undefined">
-                  <div className="thumb">
-                    <img
-                      alt="Nevo example image"
-                      src="assets/images/team/3b.jpg"
-                    />
-                    <ul className="labels">
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Behance
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="caption">
-                      <h5 className="title">Ronald Duncan</h5>
-                      <h6 className="sub">Photography</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="grid-item column undefined">
-                  <div className="thumb">
-                    <img
-                      alt="Nevo example image"
-                      src="assets/images/team/3.jpg"
-                    />
-                    <ul className="labels">
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a className="button anchor-link primary" href="#">
-                          Behance
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="caption">
-                      <h5 className="title">Lin Becker</h5>
-                      <h6 className="sub">Marketing</h6>
-                    </div>
-                  </div>
+          </section>
+          {/* end category filter 2 */}
+
+          {/* full image sction 7 */}
+          <section className="section-size-1">
+            <div className="container">
+              <div className="w-full h-screen ">
+                <Image
+                  src={'/assets/images/section7.jpg'}
+                  alt="section 7"
+                  width={100}
+                  height={400}
+                  className="w-full h-full object-cover rounded-3xl"
+                />
+              </div>
+            </div>
+          </section>
+          {/* end full image section 7 */}
+
+          {/* section 8 */}
+          <section className="section-size-2 lighter-bg">
+            <div className="container">
+              <div className="grid center text-center">
+                <div className="column-10">
+                  <p className="font-size-3 font-semibold text-socialblack mb-0">
+                    Leave this page with a{' '}
+                    <span className="text-socialred">smile</span>. If your day
+                    isn’t going great, remember—
+                    <span className="text-socialred">you are enough</span>, and
+                    your brand has{' '}
+                    <span className="text-socialred">no limits</span> to reach!
+                  </p>
+                  <p className="pl-60"> --dont be a stranger</p>
                 </div>
               </div>
             </div>
-            <div className="container">
-              <div className="space-3"></div>
-              <div className="grid">
-                <div className="column-3 centered text-center animated grey-text">
-                  <p>
-                    We&apos;re a team of skilled individuals, always striving
-                    for the best solution. We think big, and make clients
-                    successful.
+          </section>
+          {/* end section 8 */}
+        </div>
+        <section className="section-size-2 lighter-bg">
+          <footer className=" text-white py-50">
+            {/* Container */}
+            <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start px-5 space-y-8 lg:space-y-0">
+              {/* Stalk Our Feed Section */}
+              <div className="flex-1">
+                <h3 className="text-lg font-bold mb-3 text-socialblack">
+                  Stalk our feed
+                </h3>
+
+                <div className="flex items-center space-x-3 mt-4 text-socialblack">
+                  <a href="#" className=" p-2">
+                    <span className="">Instagram</span>
+                    {/* <i className="fab fa-instagram text-black"></i> */}
+                  </a>
+                  <a href="#" className=" p-2 ">
+                    <span className="">LinkedIn</span>
+                    {/* <i className="fab fa-linkedin text-black"></i> */}
+                  </a>
+                  <a href="#" className=" p-2 ">
+                    <span className="">X </span>
+                    {/* <i className="fab fa-twitter text-black"></i> */}
+                  </a>
+                </div>
+                {/* Copyright Section */}
+                <div className=" text-center py-4">
+                  <p className="text-sm text-socialblack">
+                    &copy; 2024. All rights reserved.
                   </p>
                 </div>
               </div>
-            </div>
-          </section>
-          <section className="section-size-2 lighter-bg">
-            <div className="container">
-              <div className="grid animated">
-                <div className="column-3 column-tablet-6 column-mobile-12">
-                  <h5>Interviews</h5>
-                  <ul className="list">
-                    <li>The New York Times</li>
-                    <li>Boston Herald</li>
-                    <li>Bloomberg</li>
-                    <li>Computer Science</li>
-                  </ul>
-                </div>
-                <div className="column-3 column-tablet-6 column-mobile-12">
-                  <h5>Awards</h5>
-                  <ul className="list">
-                    <li>Red Dot Award 2018</li>
-                    <li>Golden Design 2017</li>
-                    <li>Red Dot Award 2017</li>
-                    <li>Rams Winner 2016</li>
-                  </ul>
-                </div>
-                <div className="column-3 column-tablet-6 column-mobile-12">
-                  <h5>Publications</h5>
-                  <ul className="list">
-                    <li>The New York Times</li>
-                    <li>Digital Mag</li>
-                    <li>Online.com</li>
-                    <li>Digital Heroes</li>
-                  </ul>
-                </div>
-                <div className="column-3 column-tablet-6 column-mobile-12">
-                  <h5>Nominations</h5>
-                  <ul className="list">
-                    <li>Red Dot Award 2018</li>
-                    <li>Golden Design Nominee</li>
-                    <li>Red Dot Award 2017</li>
-                    <li>Rams Winner 2016</li>
-                  </ul>
-                </div>
+
+              {/* Our Services Section */}
+              <div className="flex-1 text-socialblack">
+                <h3 className="text-sm font-semibold uppercase mb-3">
+                  Our Services
+                </h3>
+                <ul className="space-y-2">
+                  <li>Social</li>
+                  <li>Paid</li>
+                  <li>Creative</li>
+                  <li>Influencer</li>
+                </ul>
+              </div>
+              {/* Company and Connect Section */}
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
+                  Company
+                </h3>
+                <ul className="space-y-2 mb-4 text-socialblack">
+                  <li>About Us</li>
+                  <li>Newsletter</li>
+                  <li>Case Studies</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              {/* Contact Section */}
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
+                  Don&apos;t be a stranger
+                </h3>
+                <p className="mb-2 text-socialblack">+91 90412 90773</p>
+                <p className="text-socialblack">
+                  socialcanvasdigital@gmail.com
+                </p>
               </div>
             </div>
-          </section>
-          <section className="section-size-2">
-            <div className="container">
-              <div className="grid">
-                <div className="column text-center centered text-left-mobile">
-                  <h5 className="animated-text">The folks we work with</h5>
-                  <div className="space-2"></div>
-                </div>
-              </div>
-            </div>
-            <div className="container width-5">
-              <div className="grid columns-5 columns-mobile-2 centered animated">
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/1.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/2.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/3.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/4.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/5.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/6.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/7.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/10.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/9.png"
-                  />
-                </div>
-                <div className="column image pad-1">
-                  <img
-                    alt="Nevo example image"
-                    src="assets/images/brands/8.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+
+            {/* Newsletter Section */}
+            {/* <div className="mt-10 bg-black">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-5 py-5 space-y-4 md:space-y-0">
+          <form className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 w-full">
+            <input
+              type="email"
+              placeholder="Your email for contact"
+              className="flex-1 px-4 py-2 rounded-full border border-gray-300 focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600"
+            >
+              Submit your inquiry now
+            </button>
+          </form>
         </div>
+      </div> */}
+          </footer>
+        </section>
         {/* <!-- Footer--> */}
-        <footer className="footer section-size-1 border-top">
+        {/* <footer className="footer section-size-1 border-top">
           <a
             className="button primary"
             href="https://themeforest.net/item/nevo-creative-pro-agency-studio-template/22853378"
@@ -767,7 +832,7 @@ export default function Home() {
             </span>
             <div>&copy; 2019</div>
           </div>
-        </footer>
+        </footer> */}
       </div>
     </>
   );

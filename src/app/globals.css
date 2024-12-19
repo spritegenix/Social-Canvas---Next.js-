@@ -4876,3 +4876,15 @@ form textarea {
 .rotate70 {
   transform: rotate(70deg);
 }
+.caseStudy {
+  display: grid;
+  grid-template-columns: repeat(3, 40%);
+  .image1 {
+    grid-row: 1 / 1.25;
+    grid-column: 1;
+  }
+  .image2 {
+    grid-row: 1 / 1.25;
+    grid-column: 2;
+  }
+}
