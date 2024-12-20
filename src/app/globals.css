@@ -4876,15 +4876,31 @@ form textarea {
 .rotate70 {
   transform: rotate(70deg);
 }
-.caseStudy {
+/* .caseStudy {
   display: grid;
-  grid-template-columns: repeat(3, 40%);
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 0px 0px;
   .image1 {
-    grid-row: 1 / 1.25;
-    grid-column: 1;
+    grid-row: span 1;
   }
-  .image2 {
-    grid-row: 1 / 1.25;
-    grid-column: 2;
+  .image3 {
+    grid-row: span 0.75;
   }
+} */
+
+@media screen and (max-width: 426px) {
+  .nevo-slider.halfscreen,
+  .nevo-slider.halfscreen .slides,
+  .nevo-slider.halfscreen .slide,
+  .nevo-slider.halfscreen .slide .container {
+    height: 100% !important;
+  }
+  .nevo-slider .slides .slide {
+    padding-bottom: 1rem;
+  }
+}
+
+header.header a.brand img {
+  max-height: 3rem !important;
 }

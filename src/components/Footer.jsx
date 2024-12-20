@@ -1,96 +1,133 @@
 import React from 'react';
 
+import { FaLinkedin } from 'react-icons/fa';
+import { FaSquareInstagram, FaSquareXTwitter } from 'react-icons/fa6';
 const Footer5 = () => {
   return (
-    <footer className=" text-white py-50">
-      {/* Container */}
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start px-5 space-y-8 lg:space-y-0">
-        {/* Stalk Our Feed Section */}
-        <div className="flex-1">
-          <h3 className="text-lg font-bold mb-3 text-socialblack">
+    <div className="text-socialblack ">
+      <div className="container flex flex-col lg:flex-row justify-between items-start  lg:space-y-0">
+        <div className="w-full lg:w-[200px] xl:w-[250px] flex flex-col  ">
+          <h3 className="text-lg font-bold mb-3 text-socialblack text-center lg:text-left">
             Stalk our feed
           </h3>
+          <div className="flex items-center justify-center lg:justify-start space-x-3 mt-4 text-socialblack">
+            <a href="#" className="p-2">
+              <span>
+                <FaSquareInstagram />
+              </span>
+            </a>
+            <a href="#" className="p-2">
+              <span>
+                <FaLinkedin />
+              </span>
+            </a>
+            <a href="#" className="p-2">
+              <span>
+                <FaSquareXTwitter />
+              </span>
+            </a>
+          </div>
+          <div className="text-center lg:text-left py-4">
+            <p className="text-sm text-socialblack">
+              &copy; 2024. All rights reserved.
+            </p>
+          </div>
+        </div>
+        <div className="lg:w-[250px] xl:w-[400px] w-full flex gap-12 md:gap-0 justify-around ">
+          <div className=" text-socialblack text-center lg:text-left">
+            <h3 className="text-sm font-semibold uppercase mb-3">
+              Our Services
+            </h3>
+            <ul className="space-y-2">
+              <li>Social</li>
+              <li>Paid</li>
+              <li>Creative</li>
+              <li>Influencer</li>
+            </ul>
+          </div>
 
-          <div className="flex items-center space-x-3 mt-4 text-socialblack">
-            <a href="#" className=" p-2 rounded">
-              <span className="sr-only">Instagram</span>
-              <i className="fab fa-instagram text-black"></i>
-            </a>
-            <a href="#" className=" p-2 rounded">
-              <span className="sr-only">LinkedIn</span>
-              <i className="fab fa-linkedin text-black"></i>
-            </a>
-            <a href="#" className=" p-2 rounded">
-              <span className="sr-only">X (Twitter)</span>
-              <i className="fab fa-twitter text-black"></i>
-            </a>
+          <div className=" text-center lg:text-left">
+            <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
+              Company
+            </h3>
+            <ul className="space-y-2 mb-4 text-socialblack">
+              <li>About Us</li>
+              <li>Newsletter</li>
+              <li>Case Studies</li>
+              <li>Contact</li>
+            </ul>
           </div>
         </div>
 
-        {/* Our Services Section */}
-        <div className="flex-1">
-          <h3 className="text-sm font-semibold text-gray-300 uppercase mb-3">
-            Our Services
-          </h3>
-          <ul className="space-y-2">
-            <li>Social</li>
-            <li>Paid</li>
-            <li>Creative</li>
-            <li>Influencer</li>
-          </ul>
-        </div>
+        <div className="flex gap-4 md:flex-1 w-2/3 items-center md:items-start mx-auto md:w-full justify-center flex-col md:flex-row md:justify-around">
+          <div className="w-full md:flex-1 text-center lg:text-left">
+            <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
+              Don&apos;t be a stranger
+            </h3>
+            <p className="mb-2 text-socialblack text-sm font-normal">
+              {' '}
+              <a href="tel:+919041290773 ">+91 90412 90773</a>
+            </p>
+            <p className="text-socialblack text-sm font-normal">
+              <a href="mailto:socialcanvasdigital@gmail.com">
+                socialcanvasdigital@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className="w-full md:flex-1 text-center lg:text-left lighter-bg p-2 rounded-xl">
+            {/* Section Title */}
+            <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
+              Get In Touch
+            </h3>
 
-        {/* Contact Section */}
-        <div className="flex-1">
-          <h3 className="text-sm font-semibold text-gray-300 uppercase mb-3">
-            Don't be a stranger
-          </h3>
-          <p className="mb-2">+91 90412 90773</p>
-          <p>socialcanvasdigital@gmail.com</p>
-        </div>
+            {/* Form Section */}
+            <form className="space-y-1 ">
+              {/* Name Field */}
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
+                />
+              </div>
 
-        {/* Company and Connect Section */}
-        <div className="flex-1">
-          <h3 className="text-sm font-semibold text-gray-300 uppercase mb-3">
-            Company
-          </h3>
-          <ul className="space-y-2 mb-4">
-            <li>About Us</li>
-            <li>Newsletter</li>
-            <li>Case Studies</li>
-            <li>Contact</li>
-          </ul>
-          <button className="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center space-x-2">
-            <i className="fas fa-briefcase"></i>
-            <span>We're Hiring</span>
-          </button>
+              {/* Email Field */}
+              <div className="relative">
+                <input
+                  type="email"
+                  placeholder="Enter Your Email ID"
+                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
+                />
+              </div>
+
+              {/* Mobile Number Field */}
+              <div className="relative">
+                <input
+                  type="tel"
+                  placeholder="Your Mobile Number"
+                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
+                />
+              </div>
+
+              {/* Company Website Field */}
+              <div className="relative">
+                <input
+                  type="url"
+                  placeholder="Company Website Link"
+                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
+                />
+              </div>
+              <button
+                type="submit"
+                className="bg-socialpeach rounded-xl px-2 mx-2 text-base font-semibold"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-
-      {/* Newsletter Section */}
-      {/* <div className="mt-10 bg-black">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-5 py-5 space-y-4 md:space-y-0">
-          <form className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 w-full">
-            <input
-              type="email"
-              placeholder="Your email for contact"
-              className="flex-1 px-4 py-2 rounded-full border border-gray-300 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600"
-            >
-              Submit your inquiry now
-            </button>
-          </form>
-        </div>
-      </div> */}
-
-      {/* Copyright Section */}
-      <div className="bg-black text-center py-4">
-        <p className="text-sm">&copy; 2024. All rights reserved.</p>
-      </div>
-    </footer>
+    </div>
   );
 };
 

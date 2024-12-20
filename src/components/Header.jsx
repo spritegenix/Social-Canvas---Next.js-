@@ -4,26 +4,26 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <a className="brand" href="index.html">
+        <a className="brand" href="/">
           <img
             className="default"
             alt="Nevo example image"
-            src="assets/images/logo.svg"
+            src="assets/images/logo.png"
           />
           <img
             className="white"
             alt="Nevo example image"
-            src="assets/images/logo-white.svg"
+            src="assets/images/logo.png"
           />
         </a>
         {/* <!-- Navigation--> */}
         <ul className="menu main">
-          <li className="menu-item has-dropdown">
-            <a className="menu-link" href="index.html">
+          <li className="menu-item ">
+            <a className="menu-link" href="/">
               Home
             </a>
             {/* <!-- Dropdown--> */}
-            <ul className="dropdown-nav">
+            {/* <ul className="dropdown-nav">
               <li className="menu-item">
                 <a className="menu-link" href="index.html">
                   Services
@@ -34,14 +34,14 @@ const Header = () => {
                   Portfolio
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li className="menu-item has-dropdown">
-            <a className="menu-link" href="pages/about-studio.html">
+          <li className="menu-item">
+            <a className="menu-link" href="services">
               Services
             </a>
             {/* <!-- Dropdown--> */}
-            <ul className="dropdown-nav">
+            {/* <ul className="dropdown-nav">
               <li className="menu-item">
                 <a className="menu-link" href="pages/about-studio.html">
                   Studio
@@ -52,14 +52,15 @@ const Header = () => {
                   Freelancer
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li className="menu-item has-dropdown">
+          {/* <li className="menu-item has-dropdown"> */}
+          <li className="menu-item">
             <a className="menu-link" href="pages/elements.html">
               Portfolio
             </a>
             {/* <!-- Dropdown--> */}
-            <ul className="dropdown-nav">
+            {/* <ul className="dropdown-nav">
               <li className="menu-item">
                 <a className="menu-link" href="pages/elements.html">
                   Elements
@@ -80,75 +81,17 @@ const Header = () => {
                   Error page
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li className="menu-item has-dropdown">
+          <li className="menu-item ">
             <a className="menu-link" href="pages/portfolio-default.html">
               Case Studies
             </a>
-            {/* <!-- Dropdown--> */}
-            <ul className="dropdown-nav">
-              <li className="menu-item">
-                <a className="menu-link" href="pages/portfolio-default.html">
-                  Default
-                </a>
-              </li>
-              <li className="menu-item">
-                <a className="menu-link" href="pages/portfolio-lightbox.html">
-                  Lightbox
-                </a>
-              </li>
-              <li className="menu-item">
-                <a className="menu-link" href="pages/portfolio-masonry.html">
-                  Masonry
-                </a>
-              </li>
-              <li className="menu-item">
-                <a className="menu-link" href="pages/portfolio-no-space.html">
-                  No-space
-                </a>
-              </li>
-              <li className="menu-item">
-                <a
-                  className="menu-link"
-                  href="pages/portfolio-random-space.html"
-                >
-                  Random-space
-                </a>
-              </li>
-              <li className="menu-item">
-                <a className="menu-link" href="pages/portfolio-filters.html">
-                  Filterable
-                </a>
-              </li>
-              <li className="menu-item">
-                <a
-                  className="menu-link"
-                  href="pages/project-single-harrys.html"
-                >
-                  Single Project
-                </a>
-              </li>
-            </ul>
           </li>
-          <li className="menu-item has-dropdown">
+          <li className="menu-item ">
             <a className="menu-link" href="pages/blog.html">
               About
             </a>
-            {/* <!-- Dropdown--> */}
-            <ul className="dropdown-nav">
-              <li className="menu-item">
-                <a className="menu-link" href="pages/blog.html">
-                  Blog
-                </a>
-              </li>
-              <li className="menu-item">
-                <a className="menu-link" href="pages/blog-single.html">
-                  Single post
-                </a>
-              </li>
-              <li className="menu-item"></li>
-            </ul>
           </li>
           <li className="menu-item">
             <a className="menu-link" href="pages/contact.html">

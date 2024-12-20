@@ -1,9 +1,9 @@
 import Footer5 from '@/components/footer';
-import Footer from '@/components/footer';
 import Header from '@/components/Header';
 import Image from 'next/image';
-import img from 'next/image';
-import Script from 'next/script';
+
+import { FaLinkedin } from 'react-icons/fa';
+import { FaSquareInstagram, FaSquareXTwitter } from 'react-icons/fa6';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         {/* <!-- Header--> */}
         <Header />
         <div className="content">
-          <section className="nevo-slider halfscreen">
+          <section className="nevo-slider halfscreen ">
             <div className="slides">
               <div className="slide color-bg-2">
                 {/* <img
@@ -20,33 +20,38 @@ export default function Home() {
                   src="assets/images/backgrounds/5.png"
                 /> */}
                 <div className="container">
-                  <div className="grid gap-4 vcenter">
+                  <div className="grid gap-4 vcenter lg:pt-11 xl:pt-0">
                     <div className="inner">
-                      <h1 className="!text-6xl">
+                      <h1 className="sm:text-lg pt-10 md:text-4xl xl:text-6xl lg:text-5xl">
                         Social-<span className="text-socialred">first</span>,
                         <br /> creatively{' '}
                         <span className="text-socialred">sharp</span>, & <br />
                         performance-
                         <span className="text-socialred">obsessed</span>
                       </h1>
-                      <a
-                        className="button primary"
-                        href="pages/portfolio-random-space.html"
-                      >
-                        Book a Strategy Call
-                      </a>
-                      <a
-                        className="button primary"
-                        href="pages/portfolio-random-space.html"
-                      >
-                        Browse Our Services
-                      </a>
+                      <div className="flex gap-2">
+                        {' '}
+                        <a
+                          className="button primary"
+                          href="pages/portfolio-random-space.html"
+                        >
+                          Book a Strategy Call
+                        </a>
+                        <a
+                          className="button primary"
+                          href="pages/portfolio-random-space.html"
+                        >
+                          Browse Our Services
+                        </a>
+                      </div>
                     </div>
-                    <div className="w-80 flex">
-                      <img
-                        src="assets/images/phone.png"
-                        alt="phone"
-                        className="pl-10"
+                    <div className="relative w-full md:w-80 xl:w-80 flex">
+                      <video
+                        src="assets/videos/movie_1.mp4"
+                        className=""
+                        autoPlay
+                        loop
+                        muted
                       />
                     </div>
                   </div>
@@ -107,7 +112,9 @@ export default function Home() {
             <div className="container">
               <div className="grid">
                 <div className="column-12 text-center text-left-mobile animated-text">
-                  <h2 className="text-socialblack">It&apos;s true.</h2>
+                  <h2 className="text-socialblack text-center">
+                    It&apos;s true.
+                  </h2>
                   <p className="flex gap-5 justify-center">
                     <span>Pause</span>
                     <span>
@@ -338,8 +345,8 @@ export default function Home() {
           <section className="section-size-2 lighter-bg">
             <div className="container">
               <div className="grid center text-center">
-                <div className="column-6">
-                  <p className="font-size-3 grey-text">
+                <div className="column-10">
+                  <p className=" grey-text sm:text-2xl">
                     Are you into fashion, beauty, or wellness? Local or global,
                     you’re in the right spot!
                   </p>
@@ -357,7 +364,7 @@ export default function Home() {
                 </h3>
               </div>
 
-              <div className="flex gap-x-20">
+              <div className="flex flex-col md:flex-row gap-x-20">
                 <div className="flex-1 h-64 object-cover overflow-hidden">
                   <Image
                     src={'/assets/images/about/7.jpg'}
@@ -388,8 +395,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex gap-x-20 mt-5">
-                <div className="flex-1">
+              <div className="flex flex-col md:flex-row gap-x-20 mt-5">
+                <div className="flex-1 order-2 md:order-1">
                   <h5 className="text-center font-semibold text-sm">
                     WHERE CREATIVITY MEETS PERFORMANCE.
                   </h5>
@@ -427,7 +434,7 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div className="flex-1  ">
+                <div className="flex-1 order-1 md:order-2 ">
                   <div className="h-64 overflow-hidden  object-cover">
                     <Image
                       src={'/assets/images/about/8.jpg'}
@@ -457,36 +464,43 @@ export default function Home() {
                 </h3>
               </div>
 
-              <div className="caseStudy">
+              <div className="caseStudy flex flex-col md:flex-row gap-3">
                 <Image
                   src={'/assets/images/caseStudy/10.jpg/'}
                   alt="pulse"
                   width={400}
                   height={300}
-                  className="object-cover image1"
+                  className="object-cover w-full h-auto md:w-[25%] md:h-[150px] lg:w-[320px] lg:h-[200px] xl:w-[400px] xl:h-[250px] image1"
                 />
+                <div className="flex flex-col w-full h-[100%]">
+                  <Image
+                    src={'/assets/images/caseStudy/12.jpg/'}
+                    alt="ikea"
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-[200px]   image3"
+                  />
+                  <Image
+                    src={'/assets/images/caseStudy/13.jpg/'}
+                    alt="asian paint"
+                    width={300}
+                    height={300}
+                    className="object-cover w-full object-top h-[200px]  image4"
+                  />
+                </div>
+
                 <Image
                   src={'/assets/images/caseStudy/11.jpg/'}
                   alt="cred"
                   width={300}
                   height={300}
-                  className="object-cover image2"
-                />
-                <Image
-                  src={'/assets/images/caseStudy/12.jpg/'}
-                  alt="ikea"
-                  width={300}
-                  height={300}
-                  className="object-cover image3"
-                />
-                <Image
-                  src={'/assets/images/caseStudy/13.jpg/'}
-                  alt="asian paint"
-                  width={300}
-                  height={300}
-                  className="object-cover image4"
+                  className="object-cover w-full h-auto md:w-[25%] md:h-[200px] lg:w-[30%] lg:h-[300px] image2"
                 />
               </div>
+              <h6 className="text-end font-semibold">
+                {' '}
+                In-<span className="text-socialred">Depth</span> View &gt;
+              </h6>
             </div>
           </section>
           {/* end case study section */}
@@ -691,12 +705,12 @@ export default function Home() {
           {/* full image sction 7 */}
           <section className="section-size-1">
             <div className="container">
-              <div className="w-full h-screen ">
+              <div className="w-fit h-fit pl-0 md:pl-4">
                 <Image
                   src={'/assets/images/section7.jpg'}
                   alt="section 7"
                   width={100}
-                  height={400}
+                  height={100}
                   className="w-full h-full object-cover rounded-3xl"
                 />
               </div>
@@ -709,7 +723,7 @@ export default function Home() {
             <div className="container">
               <div className="grid center text-center">
                 <div className="column-10">
-                  <p className="font-size-3 font-semibold text-socialblack mb-0">
+                  <p className="font-semibold text-socialblack mb-0">
                     Leave this page with a{' '}
                     <span className="text-socialred">smile</span>. If your day
                     isn’t going great, remember—
@@ -717,122 +731,16 @@ export default function Home() {
                     your brand has{' '}
                     <span className="text-socialred">no limits</span> to reach!
                   </p>
-                  <p className="pl-60"> --dont be a stranger</p>
+                  <p className="pl-40 md:pl-60"> --dont be a stranger</p>
                 </div>
               </div>
             </div>
           </section>
           {/* end section 8 */}
         </div>
-        <section className="section-size-2 lighter-bg">
-          <footer className=" text-white py-50">
-            {/* Container */}
-            <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start px-5 space-y-8 lg:space-y-0">
-              {/* Stalk Our Feed Section */}
-              <div className="flex-1">
-                <h3 className="text-lg font-bold mb-3 text-socialblack">
-                  Stalk our feed
-                </h3>
-
-                <div className="flex items-center space-x-3 mt-4 text-socialblack">
-                  <a href="#" className=" p-2">
-                    <span className="">Instagram</span>
-                    {/* <i className="fab fa-instagram text-black"></i> */}
-                  </a>
-                  <a href="#" className=" p-2 ">
-                    <span className="">LinkedIn</span>
-                    {/* <i className="fab fa-linkedin text-black"></i> */}
-                  </a>
-                  <a href="#" className=" p-2 ">
-                    <span className="">X </span>
-                    {/* <i className="fab fa-twitter text-black"></i> */}
-                  </a>
-                </div>
-                {/* Copyright Section */}
-                <div className=" text-center py-4">
-                  <p className="text-sm text-socialblack">
-                    &copy; 2024. All rights reserved.
-                  </p>
-                </div>
-              </div>
-
-              {/* Our Services Section */}
-              <div className="flex-1 text-socialblack">
-                <h3 className="text-sm font-semibold uppercase mb-3">
-                  Our Services
-                </h3>
-                <ul className="space-y-2">
-                  <li>Social</li>
-                  <li>Paid</li>
-                  <li>Creative</li>
-                  <li>Influencer</li>
-                </ul>
-              </div>
-              {/* Company and Connect Section */}
-              <div className="flex-1">
-                <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
-                  Company
-                </h3>
-                <ul className="space-y-2 mb-4 text-socialblack">
-                  <li>About Us</li>
-                  <li>Newsletter</li>
-                  <li>Case Studies</li>
-                  <li>Contact</li>
-                </ul>
-              </div>
-              {/* Contact Section */}
-              <div className="flex-1">
-                <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
-                  Don&apos;t be a stranger
-                </h3>
-                <p className="mb-2 text-socialblack">+91 90412 90773</p>
-                <p className="text-socialblack">
-                  socialcanvasdigital@gmail.com
-                </p>
-              </div>
-            </div>
-
-            {/* Newsletter Section */}
-            {/* <div className="mt-10 bg-black">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-5 py-5 space-y-4 md:space-y-0">
-          <form className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 w-full">
-            <input
-              type="email"
-              placeholder="Your email for contact"
-              className="flex-1 px-4 py-2 rounded-full border border-gray-300 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600"
-            >
-              Submit your inquiry now
-            </button>
-          </form>
-        </div>
-      </div> */}
-          </footer>
+        <section className="md:py-5 block">
+          <Footer5 />
         </section>
-        {/* <!-- Footer--> */}
-        {/* <footer className="footer section-size-1 border-top">
-          <a
-            className="button primary"
-            href="https://themeforest.net/item/nevo-creative-pro-agency-studio-template/22853378"
-            target="_blank"
-          >
-            Buy Nevo
-          </a>
-          <div className="font-size-1">
-            {' '}
-            <span>Built by </span>
-            <span>
-              {' '}
-              <a href="https://themevillain.com" target="_blank">
-                ThemeVillain
-              </a>
-            </span>
-            <div>&copy; 2019</div>
-          </div>
-        </footer> */}
       </div>
     </>
   );
