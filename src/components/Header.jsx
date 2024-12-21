@@ -18,7 +18,7 @@ const Header = () => {
         </a>
         {/* <!-- Navigation--> */}
         <ul className="menu main">
-          <li className="menu-item ">
+          <li className="menu-item  ">
             <a className="menu-link" href="/">
               Home
             </a>
@@ -37,7 +37,7 @@ const Header = () => {
             </ul> */}
           </li>
           <li className="menu-item">
-            <a className="menu-link" href="#">
+            <a className="menu-link" href="services">
               Services
             </a>
             {/* <!-- Dropdown--> */}
@@ -56,7 +56,7 @@ const Header = () => {
           </li>
           {/* <li className="menu-item has-dropdown"> */}
           <li className="menu-item">
-            <a className="menu-link" href="pages/elements.html">
+            <a className="menu-link" href="#">
               Portfolio
             </a>
             {/* <!-- Dropdown--> */}
@@ -83,31 +83,43 @@ const Header = () => {
               </li>
             </ul> */}
           </li>
-          <li className="menu-item ">
-            <a className="menu-link" href="pages/portfolio-default.html">
+          <li className="menu-item has-dropdown">
+            <a className="menu-link" href="#">
               Case Studies
             </a>
+            <ul className="dropdown-nav">
+              <li className="menu-item">
+                <a className="menu-link" href="theirapproach">
+                  Their Approach: Analyzed
+                </a>
+              </li>
+              <li className="menu-item">
+                <a className="menu-link" href="revamp">
+                  Our Take: Revamped
+                </a>
+              </li>
+            </ul>
           </li>
           <li className="menu-item ">
-            <a className="menu-link" href="pages/blog.html">
+            <a className="menu-link" href="#">
               About
             </a>
           </li>
           <li className="menu-item">
-            <a className="menu-link" href="pages/contact.html">
+            <a className="menu-link" href="contact">
               Contact
             </a>
           </li>
         </ul>
         {/* <!-- About section--> */}
-        <div className="menu about">
+        {/* <div className="menu about">
           <p>
             My goal is to make the digital world more beautiful. I believe that
             true craftmanship stands out with passion.
           </p>
-        </div>
+        </div> */}
         {/* <!-- Social Navigation--> */}
-        <ul className="menu social">
+        {/* <ul className="menu social">
           <li className="menu-item">
             <a className="menu-link anchor-link" href="#">
               Instagram
@@ -123,7 +135,7 @@ const Header = () => {
               Twitter
             </a>
           </li>
-        </ul>
+        </ul> */}
       </header>
 
       <div className="burger">

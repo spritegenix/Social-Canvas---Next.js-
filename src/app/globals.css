@@ -2281,6 +2281,7 @@ header.header,
     position: relative;
     white-space: nowrap;
   }
+
   .menu-link:after {
     content: '';
     display: block;
@@ -2465,7 +2466,7 @@ header.header,
   }
   .menu {
     background: white;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.4;
     padding: 1.5rem;
     display: none;

@@ -739,9 +739,11 @@ export default function Home() {
           </section>
           {/* end section 8 */}
         </div>
+        {/* footer section */}
         <section className="md:py-5 block">
           <Footer5 />
         </section>
+        {/* end footer section */}
       </div>
     </>
   );
