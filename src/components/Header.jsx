@@ -101,7 +101,7 @@ const Header = () => {
             </ul>
           </li>
           <li className="menu-item ">
-            <a className="menu-link" href="#">
+            <a className="menu-link" href="about-us">
               About
             </a>
           </li>

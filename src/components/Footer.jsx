@@ -2,6 +2,7 @@ import React from 'react';
 
 import { FaLinkedin } from 'react-icons/fa';
 import { FaSquareInstagram, FaSquareXTwitter } from 'react-icons/fa6';
+import Signup from './Signup';
 const Footer5 = () => {
   return (
     <div className="text-socialblack ">
@@ -59,7 +60,7 @@ const Footer5 = () => {
           </div>
         </div>
 
-        <div className="flex gap-4 md:flex-1 w-2/3 items-center md:items-start mx-auto md:w-full justify-center flex-col md:flex-row md:justify-around">
+        <div className="flex gap-4 md:flex-1  items-center md:items-start mx-auto md:w-full justify-center flex-col md:flex-row md:justify-around">
           <div className="w-full md:flex-1 text-center lg:text-left">
             <h3 className="text-sm font-semibold text-socialblack uppercase mb-3">
               Don&apos;t be a stranger
@@ -81,49 +82,7 @@ const Footer5 = () => {
             </h3>
 
             {/* Form Section */}
-            <form className="space-y-1 ">
-              {/* Name Field */}
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
-                />
-              </div>
-
-              {/* Email Field */}
-              <div className="relative">
-                <input
-                  type="email"
-                  placeholder="Enter Your Email ID"
-                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
-                />
-              </div>
-
-              {/* Mobile Number Field */}
-              <div className="relative">
-                <input
-                  type="tel"
-                  placeholder="Your Mobile Number"
-                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
-                />
-              </div>
-
-              {/* Company Website Field */}
-              <div className="relative">
-                <input
-                  type="url"
-                  placeholder="Company Website Link"
-                  className="w-full h-[15px] p-0 m-0 bg-transparent text-white placeholder-gray-400 "
-                />
-              </div>
-              <button
-                type="submit"
-                className="bg-socialpeach rounded-xl px-2 mx-2 text-base font-semibold"
-              >
-                Submit
-              </button>
-            </form>
+            <Signup footer={true} />
           </div>
         </div>
       </div>

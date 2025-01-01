@@ -26,7 +26,7 @@ const processItems = [
 
 const Process = () => {
   return (
-    <div className="md:relative -top-64">
+    <div className="md:relative -top-64 mb-60 md:mb-0">
       <div className="container">
         <h2 className="text-center">Our Process</h2>
         <h3 className="text-center md:text-end md:pr-20 font-semibold">

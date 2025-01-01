@@ -23,7 +23,7 @@ const page = () => {
 
         {/* signup section */}
         <section className="md:relative -top-44 lighter-bg p-4">
-          <Signup />
+          <Signup footer={false} />
         </section>
         {/* end signup section */}
 

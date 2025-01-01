@@ -43,7 +43,7 @@ const PulseCase = () => {
                 celebration that combines the essence of Ganesh Chaturthi with
                 emerging AI technologies
               </p>
-              <p className="text-xs text-socialred">
+              <p className="text-sm  md:text-xs text-socialred">
                 {' '}
                 In order to enhance brand awareness during this Ganesh
                 Chaturthi, the brand has collaborated with Ganpati pandals such
@@ -58,7 +58,7 @@ const PulseCase = () => {
                 technology to bring devotees' imagined visualisations of lord
                 Ganesha to life.
               </p>
-              <p className="text-xs text-socialblack">
+              <p className="text-sm md:text-xs text-socialblack">
                 At the Pulse 'Ganesh Pandal', devotees will have the opportunity
                 to interact with AI through a tablet. By describing their vision
                 of Ganesha, the system will generate a customized visual of
@@ -79,8 +79,8 @@ const PulseCase = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="text-justify md:text-center flex-1 py-3 lg:py-0 lg:pl-8 lg:order-1">
-              <p className="text-xs font-semibold text-socialred">
+            <div className="text-justify md:text-center flex-1 py-3 lg:py-0  lg:order-1">
+              <p className="text-sm md:text-xs font-semibold text-socialred">
                 {' '}
                 In order to enhance brand awareness during this Ganesh
                 Chaturthi, the brand has collaborated with Ganpati pandals such
@@ -95,7 +95,7 @@ const PulseCase = () => {
                 technology to bring devotees' imagined visualisations of lord
                 Ganesha to life.
               </p>
-              <p className="text-xs font-semibold text-socialred">
+              <p className="text-sm md:text-xs font-semibold text-socialred">
                 To extend this experience beyond the physical pandals, Pulse
                 Candy launched a contest on social media along with an AI
                 microsite. This digital platform will enable users to create

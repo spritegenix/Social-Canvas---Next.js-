@@ -2,7 +2,7 @@ import Footer5 from '@/components/footer';
 import Header from '@/components/Header';
 import Image from 'next/image';
 
-import { FaLinkedin } from 'react-icons/fa';
+import { FaArrowRight, FaLinkedin } from 'react-icons/fa';
 import { FaSquareInstagram, FaSquareXTwitter } from 'react-icons/fa6';
 
 export default function Home() {
@@ -20,8 +20,15 @@ export default function Home() {
                   src="assets/images/backgrounds/5.png"
                 /> */}
                 <div className="container">
-                  <div className="grid gap-4 vcenter lg:pt-11 xl:pt-0">
-                    <div className="inner">
+                  <div
+                    className=" gap-4 vcenter lg:pt-11 xl:pt-0 "
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'start',
+                      flex: 1,
+                    }}
+                  >
+                    <div className="inner" style={{ flex: 2 }}>
                       <h1 className="sm:text-lg pt-10 md:text-4xl xl:text-6xl lg:text-5xl">
                         Social-<span className="text-socialred">first</span>,
                         <br /> creatively{' '}
@@ -29,23 +36,32 @@ export default function Home() {
                         performance-
                         <span className="text-socialred">obsessed</span>
                       </h1>
+                      <p className="flex-wrap">
+                        We craft campaigns that don&apos;t just look great—they
+                        deliver results. From strategy to execution, we help
+                        your brand grow.
+                      </p>
                       <div className="flex gap-2">
                         {' '}
                         <a
                           className="button primary"
-                          href="pages/portfolio-random-space.html"
+                          href="https://calendly.com/ritika-socialcanvas-7i57/15-minute-let-s-discuss-your-brand?month=2025-01"
                         >
                           Book a Strategy Call
                         </a>
-                        <a
-                          className="button primary"
-                          href="pages/portfolio-random-space.html"
-                        >
+                        <a className="button primary" href="services">
                           Browse Our Services
                         </a>
                       </div>
                     </div>
-                    <div className="relative w-full md:w-80 xl:w-80 flex">
+                    <div
+                      className="relative w-full md:w-80 xl:w-80 "
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'start',
+                        flex: 1,
+                      }}
+                    >
                       <video
                         src="assets/videos/movie_1.mp4"
                         className=""
@@ -111,11 +127,14 @@ export default function Home() {
           <section className="section-size-2 !py-2 lighter-bg ">
             <div className="container">
               <div className="grid">
-                <div className="column-12 text-center text-left-mobile animated-text">
-                  <h2 className="text-socialblack text-center">
-                    It&apos;s true.
-                  </h2>
-                  <p className="flex gap-5 justify-center">
+                <div className="column-12 text-center text-left-mobile ">
+                  <p className="text-socialblack text-center font-normal md:w-3/4 mx-auto">
+                    We don&apos;t believe in cookie-cutter strategies. At Social
+                    Canvas, we pause to understand your brand, rethink how to
+                    amplify it, and create campaigns that turn heads and drive
+                    results.
+                  </p>
+                  <p className="flex gap-5 justify-center animated-text ">
                     <span>Pause</span>
                     <span>
                       {' '}
@@ -220,7 +239,12 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+                <p className="p-0 m-0">
+                  From social campaigns to marketplace takeovers, here&apos;s
+                  how we help brands win.
+                </p>
               </div>
+
               <div
                 className="grid masonry columns-3 columns-tablet-2"
                 id="grid"
@@ -235,10 +259,15 @@ export default function Home() {
                       alt="Nevo example image"
                       src="assets/images/casestudy2/social.jpg"
                     />
-                    <div className="labels">Social</div>
+                    <div className="labels text-md">Social</div>
                     <div className="caption">
-                      <div className="title">Internation Academy</div>
-                      <div className="sub">Identity Design</div>
+                      <div className="title">
+                        Italian Shoe company-instagram grid
+                      </div>
+                      <div className="sub">
+                        Achieved 10,000+ impressions for a client in the first
+                        month.
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -251,10 +280,15 @@ export default function Home() {
                       alt="Nevo example image"
                       src="assets/images/casestudy2/website.webp"
                     />
-                    <div className="labels">Website</div>
+                    <div className="labels">Website Design</div>
                     <div className="caption">
-                      <div className="title">Collect</div>
-                      <div className="sub">Logo selection</div>
+                      <div className="title mobileTitle">
+                        haus of handmade- website banners
+                      </div>
+                      <div className="sub mobileSub">
+                        Delivered 6 responsive banners and 3 hero visuals,
+                        driving a 15% increase in homepage interaction.
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -267,10 +301,15 @@ export default function Home() {
                       alt="Nevo example image"
                       src="assets/images/casestudy2/mm.jpg"
                     />
-                    <div className="labels">Marketing</div>
+                    <div className="labels">Marketplace</div>
                     <div className="caption">
-                      <div className="title">Untold</div>
-                      <div className="sub">Branding</div>
+                      <div className="title mobileTitle">
+                        BlackCarrot- Amazon Store Design
+                      </div>
+                      <div className="sub mobileSub">
+                        Enhanced product visibility by 40% with A+ content and
+                        optimized store layouts.
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -301,8 +340,11 @@ export default function Home() {
                     />
                     <div className="labels">Production</div>
                     <div className="caption">
-                      <div className="title">Tropical Thunder</div>
-                      <div className="sub">Photography</div>
+                      <div className="title">Dot & Key- Lifestyle shoot</div>
+                      <div className="sub ">
+                        Captured 10+ unique angles for hero product shots,
+                        ensuring maximum versatility.
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -331,10 +373,15 @@ export default function Home() {
                       alt="Nevo example image"
                       src="assets/images/casestudy2/ads.jpg"
                     />
-                    <div className="labels">branding</div>
+                    <div className="labels">Paid</div>
                     <div className="caption">
-                      <div className="title">Farber Law</div>
-                      <div className="sub">Work selection</div>
+                      <div className="title mobileTitle">
+                        Kicky & Perky-Meta and Google ads
+                      </div>
+                      <div className="sub mobileSub">
+                        Created 10 ad creatives for a campaign, achieving a 4x
+                        ROAS and driving $15, 000 in sales.
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -544,9 +591,13 @@ export default function Home() {
             <div className="container">
               <div className="grid center text-center">
                 <div className="column-10">
-                  <p className=" text-socialblack sm:text-2xl">
-                    Are you into fashion, beauty, or wellness? Local or global,
-                    you’re in the right spot!
+                  <h4 className=" text-socialblack sm:text-2xl">
+                    Your Brand Deserves to Be Seen. Let&apos;s Make It Happen.
+                  </h4>
+                  <p style={{ fontStyle: 'italic' }}>
+                    Whether you&apos;re a fashion powerhouse, a beauty
+                    disruptor, or a wellness innovator, we craft strategies that
+                    set your brand apart
                   </p>
                 </div>
               </div>
@@ -561,8 +612,102 @@ export default function Home() {
                   About Us
                 </h3>
               </div>
-
-              <div className="flex flex-col md:flex-row gap-x-20">
+              <div className="aboutusContainer">
+                <div className="flex-1">
+                  <div className="flex-1 lg:h-72 object-cover overflow-hidden">
+                    <Image
+                      src={'/assets/images/about/8.jpg'}
+                      alt="about image"
+                      width={1000}
+                      height={400}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="grid flex-col md:flex-row">
+                    <div className="aboutBoxes flex-1 ">
+                      <p className="p-2 font-semibold text-base md:text-xs">
+                        {' '}
+                        💼
+                        <br /> 70+ Clients
+                      </p>
+                    </div>
+                    <div className=" flex-1 ">
+                      <p className="p-2 font-semibold text-base md:text-xs">
+                        {' '}
+                        🎯
+                        <br /> 100+ campaigns Delivered
+                      </p>
+                    </div>
+                    <div className="aboutBoxes flex-1 ">
+                      <p className="p-2 font-semibold text-base md:text-xs">
+                        🌍
+                        <br /> 10+ Industries
+                      </p>
+                    </div>
+                    <div className=" flex-1 text-wrap">
+                      <p className="p-2 font-semibold text-base md:text-xs">
+                        📈
+                        <br /> 50%+ Engagement Growth on Average
+                      </p>
+                    </div>
+                    <div className="aboutBoxes flex-1 ">
+                      <p className="p-2 font-semibold text-base md:text-xs">
+                        🧭
+                        <br /> 5+ Countries
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-1 aboutUs-2">
+                  <div className="flex-1">
+                    <h5 className="text-center font-semibold">
+                      EVERY BIG IDEA STARTS SMALL.
+                    </h5>
+                    <p className="font-semibold lg:text-sm mb-3">
+                      THE STORY OF SOCIAL CANVAS:
+                    </p>
+                    <p className="font-semibold lg:text-sm mb-3">
+                      🌟 Where We Started:
+                    </p>
+                    <p className="lg:text-sm mb-3">
+                      &quot;We began with one client and a simple Instagram
+                      grid, driven by the idea that creativity should always
+                      deliver results.&quot;
+                    </p>
+                    <p className="font-semibold lg:text-sm mb-3">
+                      🚀 How We&apos;ve Grown:
+                    </p>
+                    <p className="lg:text-sm">
+                      &quot;Over the years, we&apos;ve partnered with 70+
+                      clients across 70+ industries, creating campaigns that
+                      connect, engage, and convert&quot;
+                    </p>
+                    <p className="font-semibold lg:text-sm mb-3">
+                      🎨 What We Do Today:
+                    </p>
+                    <p className="lg:text-sm">
+                      &quot;Whether it&apos;s building a dynamic Instagram grid,
+                      designing compelling websites, or capturing the perfect
+                      shot, we deliver creativity with purpose.&quot;
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div style={{ padding: '5px', textAlign: 'end' }}>
+                <a>
+                  <span
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'end',
+                      alignItems: 'center',
+                    }}
+                  >
+                    Let&apos;s create something extraordinary together
+                    <FaArrowRight />
+                  </span>
+                </a>
+              </div>
+              {/* <div className="flex flex-col md:flex-row gap-x-20">
                 <div className="flex-1 h-64 object-cover overflow-hidden">
                   <Image
                     src={'/assets/images/about/7.jpg'}
@@ -647,7 +792,7 @@ export default function Home() {
                     In-<span className="text-socialred">Depth</span> View &gt;
                   </h6>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
@@ -663,37 +808,57 @@ export default function Home() {
               </div>
 
               <div className="caseStudy flex flex-col md:flex-row gap-3">
-                <Image
-                  src={'/assets/images/caseStudy/10.jpg'}
-                  alt="pulse"
-                  width={400}
-                  height={300}
-                  className="object-cover w-full h-auto md:w-[25%] md:h-[150px] lg:w-[320px] lg:h-[200px] xl:w-[400px] xl:h-[250px] image1"
-                />
-                <div className="flex flex-col w-full h-[100%]">
+                <div className="w-full relative h-auto md:w-[25%] md:h-[150px] lg:w-[300px] lg:h-[200px] xl:w-[350px] xl:h-[250px] group">
                   <Image
-                    src={'/assets/images/caseStudy/12.jpg'}
-                    alt="ikea"
-                    width={300}
+                    src={'/assets/images/caseStudy/10.jpg'}
+                    alt="pulse"
+                    width={400}
                     height={300}
-                    className="object-cover w-full h-[200px]   image3"
+                    className="object-cover w-full h-full "
                   />
-                  <Image
-                    src={'/assets/images/caseStudy/13.jpg'}
-                    alt="asian paint"
-                    width={300}
-                    height={300}
-                    className="object-cover w-full object-top h-[200px]  image4"
-                  />
+                  <p className="hidden group-hover:flex absolute top-0 left-5 font-bold text-white">
+                    Pulse candy - a case study
+                  </p>
                 </div>
 
-                <Image
-                  src={'/assets/images/caseStudy/11.jpg'}
-                  alt="cred"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-auto md:w-[25%] md:h-[200px] lg:w-[30%] lg:h-[300px] image2"
-                />
+                <div className="flex flex-col ">
+                  <div className="w-full  h-[200px] md:w-[350px] lg:w-[400px] xl:w-[600px] relative group">
+                    <Image
+                      src={'/assets/images/caseStudy/12.jpg'}
+                      alt="ikea"
+                      width={300}
+                      height={300}
+                      className="object-cover w-full h-full "
+                    />
+                    <p className="hidden group-hover:flex absolute top-0 left-5 font-bold text-white ">
+                      Ikea - a case study
+                    </p>
+                  </div>
+                  <div className="w-full relative h-[200px] md:w-[350px] lg:w-[400px] xl:w-[600px] group">
+                    <Image
+                      src={'/assets/images/caseStudy/13.jpg'}
+                      alt="asian paint"
+                      width={300}
+                      height={300}
+                      className="object-cover w-full object-top h-full"
+                    />
+                    <p className="hidden group-hover:flex absolute bottom-10 left-5 font-bold  text-black z-10 ">
+                      Asian paints - a case study
+                    </p>
+                  </div>
+                </div>
+                <div className="w-full relative h-auto md:w-[25%] md:h-[200px] lg:w-[30%] lg:h-[300px] group">
+                  <Image
+                    src={'/assets/images/caseStudy/11.jpg'}
+                    alt="cred"
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-full"
+                  />
+                  <p className="hidden group-hover:flex absolute top-0 left-5 font-bold text-white">
+                    Our Take: Revamped
+                  </p>
+                </div>
               </div>
               <h6 className="text-end font-semibold">
                 {' '}
@@ -732,7 +897,7 @@ export default function Home() {
                     your brand has{' '}
                     <span className="text-socialred">no limits</span> to reach!
                   </p>
-                  <p className="pl-40 md:pl-60"> -don&apos;t be a stranger</p>
+                  <p className="pl-28 md:pl-60"> -don&apos;t be a stranger</p>
                 </div>
               </div>
             </div>
