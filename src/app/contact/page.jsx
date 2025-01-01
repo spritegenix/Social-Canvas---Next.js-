@@ -14,16 +14,16 @@ const page = () => {
         <section className="mb-5">
           <Signup footer={false} />
           <div className="flex justify-around items-center">
-            <a className=" border-none">
+            <a href="#" className=" border-none">
               <FaInstagram size={50} />
             </a>
-            <a className=" border-none">
+            <a href="#" className=" border-none">
               <FaSquareXTwitter size={50} />
             </a>
-            <a className=" border-none">
+            <a href="#" className=" border-none">
               <FaLinkedin size={50} />
             </a>
-            <a className=" border-none">
+            <a href="#" className=" border-none">
               <IoMdMail size={60} />
             </a>
           </div>
